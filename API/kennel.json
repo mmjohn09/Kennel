@@ -1,0 +1,84 @@
+{
+  "animals": [
+    {
+      "id": 1,
+      "name": "Doodles",
+      "breed": "Poodle"
+    },
+    {
+      "id": 2,
+      "name": "Deckerd",
+      "breed": "German Shepherd"
+    },
+    {
+      "id": 3,
+      "name": "Esme",
+      "breed": "Pitbull"
+    },
+    {
+      "id": 4,
+      "name": "Weebles",
+      "breed": "Pug"
+    }
+  ],
+  "owners": [
+    {
+      "id": 1,
+      "name": "Jeremy Campbell",
+      "phoneNumber": "502-485-6849",
+      "animalId": 2
+    },
+    {
+      "id": 2,
+      "name": "Daphne Fisher",
+      "phoneNumber": "513-665-9035",
+      "animalId": 3
+    },
+    {
+      "id": 3,
+      "name": "Taylor Endler",
+      "phoneNumber": "502-445-6934",
+      "animalId": 1
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "John Smith",
+      "department": "Operations",
+      "phoneNumber": "555-555-5555"
+    },
+    {
+      "id": 2,
+      "name": "Mary Jones",
+      "department": "Training",
+      "phoneNumber": "555-555-5555"
+    },
+    {
+      "id": 3,
+      "name": "Larry Green",
+      "department": "Finance",
+      "phoneNumber": "555-555-5555"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "West Nashville",
+      "phoneNumber": "555-555-5555",
+      "address": "436 Charlotte Pike"
+    },
+    {
+      "id": 2,
+      "name": "12 South",
+      "phoneNumber": "555-555-5555",
+      "address": "5986 Oak Street"
+    },
+    {
+      "id": 3,
+      "name": "Brentwood",
+      "phoneNumber": "555-555-5555",
+      "address": "123 Elm Avenue"
+    }
+  ]
+}

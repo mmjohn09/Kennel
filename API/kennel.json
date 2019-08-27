@@ -19,6 +19,31 @@
       "id": 4,
       "name": "Weebles",
       "breed": "Pug"
+    },
+    {
+      "id": 5,
+      "name": "Doodles",
+      "breed": "Poodle"
+    },
+    {
+      "id": 6,
+      "name": "Doodles",
+      "breed": "Poodle"
+    },
+    {
+      "id": 7,
+      "name": "Doodles",
+      "breed": "Poodle"
+    },
+    {
+      "id": 8,
+      "name": "Doodles",
+      "breed": "Poodle"
+    },
+    {
+      "id": 9,
+      "name": "Doodles",
+      "breed": "Poodle"
     }
   ],
   "owners": [
@@ -70,15 +95,15 @@
     },
     {
       "id": 2,
-      "name": "12 South",
-      "phoneNumber": "555-555-5555",
-      "address": "5986 Oak Street"
-    },
-    {
-      "id": 3,
       "name": "Brentwood",
       "phoneNumber": "555-555-5555",
       "address": "123 Elm Avenue"
+    },
+    {
+      "id": 3,
+      "name": "12 South",
+      "phoneNumber": "555-555-5555",
+      "address": "5986 Oak Street"
     }
   ]
 }

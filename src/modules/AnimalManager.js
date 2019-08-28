@@ -2,13 +2,16 @@ const remoteURL = "http://localhost:5002"
 
 export default {
   get(id) {
-    return fetch(`${remoteURL}/animals/${id}`).then(result => result.json())
+    return fetch(`${remoteURL}/animals/${id}`)
+      .then(result => result.json())
   },
   getAll() {
-    return fetch(`${remoteURL}/animals`).then(result => result.json())
+    return fetch(`${remoteURL}/animals`)
+      .then(result => result.json())
   },
   getAllAnimalsAndOwners() {
-    return fetch(`${remoteURL}/animals?_embed=owners`).then(result => result.json())
+    return fetch(`${remoteURL}/animals?_embed=owners`)
+      .then(result => result.json())
   },
   delete(id) {
     return fetch(`${remoteURL}/animals/${id}`, {
@@ -18,11 +21,21 @@ export default {
   },
   post(newAnimal) {
     return fetch(`${remoteURL}/animals`, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(newAnimal)
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(newAnimal)
     }).then(data => data.json())
-}
+  },
+
+  update(editedAnimal) {
+    return fetch(`${remoteURL}/animals/${editedAnimal.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(editedAnimal)
+    }).then(data => data.json());
+  }
 }

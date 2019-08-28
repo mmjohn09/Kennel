@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import OwnerManager from '../../modules/OwnerManager';
-import './OwnerForm.css'
+// import './OwnerForm.css'
 
 class OwnerForm extends Component {
     state = {

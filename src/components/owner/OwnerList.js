@@ -8,7 +8,7 @@ class OwnerList extends Component {
     }
 
     componentDidMount() {
-        OwnerManager.getAllOwnersAndAnimal()
+        OwnerManager.getAll()
             .then((owners) => {
                 this.setState({
                     owners: owners
@@ -19,7 +19,7 @@ class OwnerList extends Component {
     deleteOwner = id => {
         OwnerManager.delete(id)
             .then(() => {
-                OwnerManager.getAllOwnersAndAnimal()
+                OwnerManager.getAll()
                     .then((newOwners) => {
                         this.setState({
                             owners: newOwners
@@ -43,6 +43,7 @@ class OwnerList extends Component {
             <div className="container-cards">
                 {this.state.owners.map(owner => <OwnerCard key={owner.id} owner={owner}
                     deleteOwner={this.deleteOwner}
+                    {...this.props}
                 />)}
             </div>
             </React.Fragment>

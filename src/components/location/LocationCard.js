@@ -7,11 +7,13 @@ class LocationCard extends Component {
     return (
       <div className="card">
         <div className="card-content">
-          <h3>Name: <span className="card-locationname">{this.props.location.name}</span></h3>
-          <address>{this.props.location.address}</address>
-          <p>Phone Number: {this.props.location.phoneNumber}</p>
-          <Link to={`/locations/${this.props.location.id}`}><button>Details</button></Link>
-          <button type="button" onClick={() => this.props.deleteLocation(this.props.location.id)}>Delete</button>
+          <h3>Name: <span className="card-locationname">{this.props.locationObject.name}</span></h3>
+          <address>{this.props.locationObject.address}</address>
+          <p>Phone Number: {this.props.locationObject.phoneNumber}</p>
+          <Link to={`/locations/${this.props.locationObject.id}`}><button>Details</button></Link>
+          <button type="button" onClick={() => this.props.deleteLocation(this.props.locationObject.id)}>Delete</button>
+          <button type="button"
+            onClick={() => { this.props.history.push(`/locations/${this.props.locationObject.id}/edit`) }}>Edit</button>
         </div>
       </div>
     );

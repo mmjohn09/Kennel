@@ -1,12 +1,12 @@
 {
   "animals": [
     {
-      "name": "Doodles",
+      "name": "Doodle",
       "breed": "Poodle",
       "id": 1
     },
     {
-      "name": "Deckerd",
+      "name": "Decker",
       "breed": "German Shepherd",
       "id": 2
     },
@@ -25,20 +25,22 @@
     {
       "name": "Jeremy Campbell",
       "phoneNumber": "502-485-6849",
-      "animalId": 2,
       "id": 1
     },
     {
       "name": "Daphne Fisher",
       "phoneNumber": "513-665-9035",
-      "animalId": 3,
       "id": 2
     },
     {
       "name": "Taylor Endler",
       "phoneNumber": "502-445-6934",
-      "animalId": 1,
       "id": 3
+    },
+    {
+      "name": "Joe Jackson",
+      "phoneNumber": "555-555-5555",
+      "id": 4
     }
   ],
   "employees": [
@@ -61,7 +63,7 @@
       "id": 3
     },
     {
-      "name": "Maggie Johnson",
+      "name": "Charles Barkley",
       "department": "Some Department",
       "phoneNumber": "555-555-5555",
       "id": 4
@@ -71,12 +73,6 @@
       "department": "Another Department",
       "phoneNumber": "555-555-5555",
       "id": 6
-    },
-    {
-      "name": "asdf",
-      "department": "adsf",
-      "phoneNumber": "asdf",
-      "id": 7
     }
   ],
   "locations": [
@@ -100,8 +96,8 @@
     },
     {
       "name": "West Nashville",
-      "phoneNumber": "555-555-5555",
       "address": "436 Charlotte Pike",
+      "phoneNumber": "555-555-5555",
       "id": 4
     },
     {

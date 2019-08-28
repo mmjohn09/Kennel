@@ -26,7 +26,7 @@ class LocationForm extends Component {
             this.setState({ loadingStatus: true });
             const location = {
                 name: this.state.name,
-                department: this.state.address,
+                address: this.state.address,
                 phoneNumber: this.state.phoneNumber
             };
 
